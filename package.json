@@ -1,7 +1,7 @@
 {
-  "name": "conventional-changelog-angular",
+  "name": "conventional-changelog-standard",
   "version": "1.0.0",
-  "description": "conventional-changelog angular preset",
+  "description": "conventional-changelog standard preset",
   "main": "index.js",
   "scripts": {
     "coverage": "istanbul cover -x test.js _mocha -- -R spec --timeout 30000 && rm -rf ./coverage",
@@ -10,19 +10,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stevemao/conventional-changelog-angular.git"
+    "url": "git+https://github.com/bcoe/conventional-changelog-standard.git"
   },
   "keywords": [
     "conventional-changelog",
-    "angular",
+    "standard",
     "preset"
   ],
   "author": "Steve Mao",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/stevemao/conventional-changelog-angular/issues"
+    "url": "https://github.com/bcoe/conventional-changelog-standard/issues"
   },
-  "homepage": "https://github.com/stevemao/conventional-changelog-angular#readme",
+  "homepage": "https://github.com/bcoe/conventional-changelog-standard#readme",
   "devDependencies": {
     "chai": "^3.4.1",
     "conventional-changelog-core": "^1.0.1",
