@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.2.0"></a>
+# [1.2.0](https://github.com/bcoe/conventional-changelog-standard/compare/v1.1.0...v1.2.0) (2016-04-09)
+
+
+### Features
+
+* **github:** adds github-specific replacements for issues and users ([ee703a3](https://github.com/bcoe/conventional-changelog-standard/commit/ee703a3))
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/bcoe/conventional-changelog-standard/compare/v1.0.0...v1.1.0) (2016-04-09)
 
