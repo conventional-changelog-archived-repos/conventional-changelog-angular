@@ -1,3 +1,17 @@
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/bcoe/conventional-changelog-standard/compare/v1.0.0...v1.1.0) (2016-04-09)
+
+
+### Features
+
+* remove commit length restriction from angular's style-guide (this better fit's npm's workflow, the only thing blocking buy-in on standard commit messages). ([61da424](https://github.com/bcoe/conventional-changelog-standard/commit/61da424))
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/stevemao/conventional-changelog-angular/compare/v0.1.0...v1.0.0) (2016-02-05)
 
