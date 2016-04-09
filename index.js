@@ -86,7 +86,7 @@ var writerOpts = {
         commit.subject = commit.subject.replace(/( ?)#([0-9]+)(\b|^)/g, '$1[#$2](' + url + '$2)$3');
       }
       // GitHub user URLs.
-      commit.subject = commit.subject.replace(/( ?)@([a-zA-Z0-9]+)(\b|^)/g, '$1[@$2](https://github.com/$2)$3');
+      commit.subject = commit.subject.replace(/( ?)@([a-zA-Z0-9_]+)(\b|^)/g, '$1[@$2](https://github.com/$2)$3');
       commit.subject = commit.subject;
     }
 

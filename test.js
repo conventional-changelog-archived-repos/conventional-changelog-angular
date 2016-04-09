@@ -78,7 +78,7 @@ describe('angular preset', function() {
   });
 
   it('should replace @username with GitHub user URL', function(done) {
-    gitDummyCommit(['feat(awesome): issue brought up by @bcoe on Friday']);
+    gitDummyCommit(['feat(awesome): issue brought up by @bcoe! on Friday']);
 
     conventionalChangelogCore({
       config: preset
