@@ -31,6 +31,3 @@
 ### Features
 
 * **init:** extracting code from https://github.com/ajoslin/conventional-changelog ([79a8c6b](https://github.com/stevemao/conventional-changelog-angular/commit/79a8c6b))
-
-
-
