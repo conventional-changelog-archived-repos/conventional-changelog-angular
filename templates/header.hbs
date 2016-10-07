@@ -16,7 +16,15 @@
   {{~else}}
     {{~@root.repoUrl}}
   {{~/if~}}
-  /compare/{{previousTag}}...{{currentTag}})
+  {{~#if @root.host~}}
+    {{~#if @root.host_bitbucket~}} {{~!-- BitBucket makes the comparision with two dots --}}
+      /compare/{{previousTag}}..{{currentTag}})
+    {{~else~}}
+      /compare/{{previousTag}}...{{currentTag}})
+    {{~/if~}}
+  {{~else~}}
+    /compare/{{previousTag}}...{{currentTag}})
+  {{~/if~}}
 {{~else}}
   {{~version}}
 {{~/if}}
