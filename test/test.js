@@ -228,4 +228,30 @@ describe('angular preset', function() {
         done();
       }));
   });
+  
+  it('should work for Bitbucket', function(done) {
+    preparing(8);
+    var i = 0;
+
+    conventionalChangelogCore({
+      config: preset
+    }, {
+      host: 'https://bitbucket.org'
+    })
+      .on('error', function(err) {
+        done(err);
+      })
+      .pipe(through(function(chunk, enc, cb) {
+        chunk = chunk.toString();
+
+        expect(chunk).to.not.include('<a name');  // Bitbucket does not support HTML
+        expect(chunk).to.not.include('...');      // Bitbucket does not compare with '...'
+
+        i++;
+        cb();
+      }, function() {
+        expect(i).to.equal(1);
+        done();
+      }));
+  });
 });
