@@ -1,4 +1,10 @@
-<a name="{{version}}"></a>
+{{~#if @root.host~}}
+  {{~#ifCond @root.host "regex" "github|gitlab" "i" ~}} {{~!-- BitBucket does not support html --~}}
+    <a name="{{version}}"></a>
+  {{~/ifCond~}}
+{{~else~}}
+  <a name="{{version}}"></a>
+{{~/if~}}
 {{#if isPatch~}}
   ##
 {{~else~}}
@@ -16,7 +22,15 @@
   {{~else}}
     {{~@root.repoUrl}}
   {{~/if~}}
-  /compare/{{previousTag}}...{{currentTag}})
+  {{~#if @root.host~}}
+    {{~#ifCond @root.host "regex" "bitbucket" "i" ~}} {{~!-- BitBucket makes the comparision with two dots --~}}
+      /compare/{{previousTag}}..{{currentTag}})
+    {{~else~}}
+      /compare/{{previousTag}}...{{currentTag}})
+    {{~/ifCond~}}
+  {{~else~}}
+    /compare/{{previousTag}}...{{currentTag}})
+  {{~/if~}}
 {{~else}}
   {{~version}}
 {{~/if}}
