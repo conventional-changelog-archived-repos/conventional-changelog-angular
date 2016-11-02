@@ -47,10 +47,6 @@ var writerOpts = {
       discard = false;
     });
 
-    // Angular 2 commit conventions
-    // Link: https://github.com/angular/angular/blob/master/CONTRIBUTING.md#type
-    // added: build, ci
-
     if (commit.type === 'feat') {
       commit.type = 'Features';
     } else if (commit.type === 'fix') {
