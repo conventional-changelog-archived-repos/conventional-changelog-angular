@@ -23,6 +23,8 @@ betterThanBefore.setups([
     gitDummyCommit(['fix(compile): avoid a bug', 'BREAKING CHANGE: The Change is huge.']);
     gitDummyCommit(['perf(ngOptions): make it faster', ' closes #1, #2']);
     gitDummyCommit('revert(ngOptions): bad commit');
+    gitDummyCommit('build(npm): update dependencies');
+    gitDummyCommit('ci(travis): update travis configuration');
     gitDummyCommit('fix(*): oops');
   },
   function() {
@@ -74,9 +76,10 @@ describe('angular preset', function() {
         expect(chunk).to.include('Performance Improvements');
         expect(chunk).to.include('Reverts');
         expect(chunk).to.include('bad commit');
+        expect(chunk).to.include('update dependencies');
+        expect(chunk).to.include('update travis configuration');
         expect(chunk).to.include('BREAKING CHANGES');
 
-        expect(chunk).to.not.include('first commit');
         expect(chunk).to.not.include('feat');
         expect(chunk).to.not.include('fix');
         expect(chunk).to.not.include('perf');
