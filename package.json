@@ -25,7 +25,7 @@
   "homepage": "https://github.com/conventional-changelog/conventional-changelog-angular#readme",
   "devDependencies": {
     "better-than-before": "^1.0.0",
-    "chai": "^3.5.0",
+    "chai": "^4.1.0",
     "conventional-changelog-core": "^1.5.0",
     "coveralls": "^2.11.14",
     "git-dummy-commit": "^1.3.0",
