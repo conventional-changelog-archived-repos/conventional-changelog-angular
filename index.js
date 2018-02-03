@@ -51,22 +51,26 @@ var writerOpts = {
       commit.type = 'Features';
     } else if (commit.type === 'fix') {
       commit.type = 'Bug Fixes';
-    } else if (commit.type === 'perf') {
-      commit.type = 'Performance Improvements';
-    } else if (commit.type === 'revert') {
-      commit.type = 'Reverts';
-    } else if (discard) {
-      return;
     } else if (commit.type === 'docs') {
       commit.type = 'Documentation';
     } else if (commit.type === 'style') {
       commit.type = 'Styles';
     } else if (commit.type === 'refactor') {
       commit.type = 'Code Refactoring';
+    } else if (commit.type === 'perf') {
+      commit.type = 'Performance Improvements';
     } else if (commit.type === 'test') {
       commit.type = 'Tests';
+    } else if (commit.type === 'build') {
+      commit.type = 'Build';
+    } else if (commit.type === 'ci') {
+      commit.type = 'Continuous Integration';
     } else if (commit.type === 'chore') {
       commit.type = 'Chores';
+    } else if (commit.type === 'revert') {
+      commit.type = 'Reverts';
+    } else if (discard) {
+      return;
     }
 
     if (commit.scope === '*') {
